@@ -11,7 +11,7 @@ services:
     env: python
     region: singapore
     buildCommand: './build.sh'
-    startCommand: 'gunicorn recipe_RestApi.wsgi:application'
+    startCommand: 'gunicorn RestApi.wsgi:application'
     plan: free
     branch: main
     healthCheckPath: /
